@@ -250,12 +250,12 @@ header .site-nav li a.current::after {
 
 /*секции достоинства*/
 
-.section-dignity {
+.dignity {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-dignity .title {
+.dignity__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -265,7 +265,7 @@ header .site-nav li a.current::after {
   margin-top: 20px;
 }
 
-.section-dignity .text {
+.dignity__text {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 14px;
@@ -275,10 +275,10 @@ header .site-nav li a.current::after {
   margin-top: 10px;
 }
 
-.section-dignity ul,
+.dignity ul,
 .section-images ul,
-.section-team ul,
-.section-clients ul {
+.team ul,
+.clients ul {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -286,11 +286,11 @@ header .site-nav li a.current::after {
   gap: 10px;
 }
 
-.section-dignity ul li {
+.dignity ul li {
   gap: 30px;
 }
 
-.dignity-antenna::before {
+.dignity__antenna::before {
   display: block;
   content: '';
   height: 120px;
@@ -302,7 +302,7 @@ header .site-nav li a.current::after {
   background-position: center;
 }
 
-.dignity-clock::before {
+.dignity__clock::before {
   display: block;
   content: '';
   height: 120px;
@@ -314,7 +314,7 @@ header .site-nav li a.current::after {
   background-position: center;
 }
 
-.dignity-diagram::before {
+.dignity__diagram::before {
   display: block;
   content: '';
   height: 120px;
@@ -326,7 +326,7 @@ header .site-nav li a.current::after {
   background-position: center;
 }
 
-.dignity-astronaut::before {
+.dignity__astronaut::before {
   display: block;
   content: '';
   height: 120px;
@@ -388,7 +388,7 @@ header .site-nav li a.current::after {
 
 /*секция команда*/
 
-.section-icon {
+.team__icon {
   background-color: #ffffff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 1px rgba(0, 0, 0, 0.14),
     0 2px 1px rgba(0, 0, 0, 0.2);
@@ -399,7 +399,7 @@ header .site-nav li a.current::after {
   flex-wrap: wrap;
 }
 
-.section-team .title-dreams {
+.team__title--dreams {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -408,13 +408,13 @@ header .site-nav li a.current::after {
   letter-spacing: 0.03em;
 }
 
-.team-united {
+.team__united {
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.section-team .title {
+.team__title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -422,7 +422,7 @@ header .site-nav li a.current::after {
   letter-spacing: 0.03em;
 }
 
-.section-team .text {
+.team__text {
   color: var(--primary-text-color);
   font-weight: 400;
   font-size: 16px;
@@ -431,13 +431,13 @@ header .site-nav li a.current::after {
   margin-top: 10px;
 }
 
-.section-team {
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
-.social-team {
+.social {
   display: flex;
   justify-content: center;
   margin-top: 16px;
@@ -445,7 +445,7 @@ header .site-nav li a.current::after {
   padding-right: 32px;
 }
 
-.icon-team {
+.social__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,8 +459,8 @@ header .site-nav li a.current::after {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-team:hover,
-.icon-team:focus {
+.social__icon:hover,
+.social__icon:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
@@ -468,12 +468,12 @@ header .site-nav li a.current::after {
 /*END секция команда ==========================*/
 
 /* Клиенты */
-.section-clients {
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-clients .title {
+.clients__title {
   margin-top: 0;
   margin-bottom: 50px;
   color: var(--title-text-color);
@@ -484,15 +484,11 @@ header .site-nav li a.current::after {
   letter-spacing: 0.03em;
 }
 
-.clients .icon {
+.clients__width {
   max-width: 170px;
 }
 
-.clients-icon .four {
-  color: #afb1b8;
-}
-
-.clients-icon {
+.clients__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -507,8 +503,8 @@ header .site-nav li a.current::after {
     outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon .clients-icon:focus,
-.icon .clients-icon:hover {
+.clients__icon:focus,
+.clients__icon:hover {
   fill: #2196f3;
   border-color: #2196f3;
   outline-color: #2196f3;
